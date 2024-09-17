@@ -811,11 +811,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 0cb79010-4334-402f-8497-9392b86b13ef
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: METAFearLess
+  organizationId: juansancheurb
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
