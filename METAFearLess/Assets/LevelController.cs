@@ -5,7 +5,6 @@ using System.Collections;
 
 public class LevelController : MonoBehaviour
 {
-    // URL del Gist que contiene el JSON
     private string jsonUrl = "https://gist.githubusercontent.com/Sebasurb01/1217423ad5ae40c9f51005ab1b1ab4f7/raw/level_data.json";
 
     private void Awake()
@@ -17,7 +16,7 @@ public class LevelController : MonoBehaviour
         }
         else
         {
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); // Esto preserva este objeto al cambiar de nivel
         }
     }
 
@@ -28,10 +27,10 @@ public class LevelController : MonoBehaviour
 
     IEnumerator UpdateLevelPeriodically()
     {
-        while (true) // Ciclo infinito
+        while (true)
         {
             yield return StartCoroutine(GetLevelFromJson());
-            yield return new WaitForSeconds(30); // Espera 30 segundos antes de volver a consultar
+            yield return new WaitForSeconds(30);
         }
     }
 
